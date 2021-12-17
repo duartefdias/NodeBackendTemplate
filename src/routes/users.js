@@ -2,7 +2,7 @@ import { Router } from 'express'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import passport from 'passport'
-const key = require('../../config/keys').secret;
+const key = require('../config/keys').secret;
 import User from '../models/User'
 
 const router = Router()

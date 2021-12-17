@@ -15,7 +15,7 @@ const app = express()
 // Use the passport Middleware
 app.use(passport.initialize());
 // Bring in the Passport Strategy
-require('../config/passport')(passport);
+require('./config/passport.js')(passport);
 
 app.use(cors())
 
